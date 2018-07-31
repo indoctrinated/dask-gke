@@ -2,7 +2,7 @@ cluster:
   num_nodes: 9                 # how many machines to ask Google for
   machine_type: n1-standard-8  # type of each machine https://cloud.google.com/compute/docs/machine-types
   disk_size: 50                # local volume size (GB) available on each machine
-  zone: us-east1-b             # one of https://cloud.google.com/compute/docs/regions-zones/
+  zone: us-central1-b             # one of https://cloud.google.com/compute/docs/regions-zones/
   autoscaling: True           # whether to spin up/down nodes as number of containers is changed
   min_nodes: 2                 # if autoscaling, never have fewer than this many machines
   max_nodes: 9                # if autoscaling, never have more than this many machines
